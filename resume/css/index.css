@@ -180,7 +180,7 @@ html, body {
 .resume{
     position: absolute;
     left: .6rem;
-    top: .7rem;
+    top: .3rem;
     text-align: center;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
@@ -205,7 +205,7 @@ html, body {
 .logo{
     position: absolute;
     left:.8rem;
-    top: 1.5rem;
+    top: 1rem;
     margin: .15rem auto;
     width: 1.6rem;
     height: 1.6rem;
@@ -217,7 +217,7 @@ html, body {
 .job_direction{
     position: absolute;
     left: .6rem;
-    top: 3.5rem;
+    top: 3rem;
     width: 2rem;
     height: .4rem;
     text-align: center;
@@ -230,7 +230,7 @@ html, body {
 .title p{
     position: absolute;
     left: .82rem;
-    bottom: 1.5rem;
+    bottom: 1.9rem;
     font-size: .18rem;
     color:rgba(255,255,255,.8);
     opacity: 0;
@@ -238,7 +238,7 @@ html, body {
 .know_more{
     position: absolute;
     left: .65rem;
-    bottom: 1rem;
+    bottom: 1.2rem;
     width: 1.9rem;
     height: .34rem;
     background: url("../img/known-more.png") no-repeat;
@@ -271,7 +271,7 @@ html, body {
 .white_back{
     position: absolute;
     left: .05rem;
-    top: 1.1rem;
+    top: .6rem;
     width: 3rem;
     height: 4rem;
     background: url("../img/bg3.png") no-repeat;
@@ -336,31 +336,31 @@ html, body {
 }
 .skill_list{
     width: 2.5rem;
-    height: .7rem;
-    line-height: .7rem;
+    height: .5rem;
+    line-height: .5rem;
 
 }
 .skill_list .child_left{
     position: absolute;
     left: 0;
-    width: .8rem;
-    height: .7rem;
+    width: .6rem;
+    height: .5rem;
     opacity: 0;
 }
 .skill_list1{
     top: 0;
 }
 .skill_list2{
-    top: .9rem;
+    top: .7rem;
 }
 .skill_list3{
-    top: 1.8rem;
+    top: 1.4rem;
 }
 .skill_list4{
-    top: 2.7rem;
+    top: 2.1rem;
 }
 .skill_list5{
-    top: 3.6rem;
+    top: 2.8rem;
 }
 
 .skill_list .child_left img{
@@ -380,16 +380,16 @@ html, body {
     top: 0;
 }
 .child_right2{
-    top: 0.9rem;
+    top: 0.7rem;
 }
 .child_right3{
-    top: 1.8rem;
+    top: 1.4rem;
 }
 .child_right4{
-    top: 2.7rem;
+    top: 2.1rem;
 }
 .child_right5{
-    top: 3.6rem;
+    top: 2.8rem;
 }
 /*第四页样式*/
 .experience{
@@ -426,15 +426,15 @@ html, body {
     opacity: 0;
 }
 .two{
-    bottom: 1.6rem;
+    bottom: 1.2rem;
     opacity: 0;
 }
 .thr{
-    bottom: 2.8rem;
+    bottom: 2.3rem;
     opacity: 0;
 }
 .for{
-    bottom: 3.9rem;
+    bottom: 3.2rem;
     opacity: 0;
 }
 .pageFor ul{
@@ -459,13 +459,13 @@ html, body {
     bottom: 0.2rem;
 }
 .two_left,.two_right{
-    bottom: 1.3rem;
+    bottom: 1rem;
 }
 .thr_left,.thr_right{
-    bottom: 2.6rem;
+    bottom: 2rem;
 }
 .for_left,.for_right{
-    bottom: 3.8rem;
+    bottom: 2.9rem;
 }
 /*第五张样式*/
 .contact{
@@ -1103,7 +1103,7 @@ div.weixin{
         height: 0;
     }
     100%{
-        height: 4.2rem;
+        height: 3.4rem;
     }
 }
 
@@ -1112,7 +1112,7 @@ div.weixin{
         height: 0;
     }
     100%{
-        height: 4.2rem;
+        height: 3.4rem;
     }
 }
 
