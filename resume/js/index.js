@@ -45,7 +45,7 @@
     var audioBox=document.querySelector(".audio"),
         myAudio=audioBox.getElementsByTagName("audio")[0];
     window.setTimeout(function () {
-        //myAudio.play();
+        myAudio.play();
         myAudio.addEventListener("canplay",function () {
             audioBox.style.display="block";
             audioBox.className+=" audioMove";
@@ -53,7 +53,7 @@
     },1000);
     audioBox.addEventListener("click",function () {
         if(myAudio.paused){
-            //myAudio.play();
+            myAudio.play();
             audioBox.className="audio audioMove";
             return;
         }
