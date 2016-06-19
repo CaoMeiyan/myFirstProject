@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/index-css.css">
 </head>
 <body>
+<!--回到顶部-->
+<a href="javascript:;" id="linkTo">顶部回到</a>
 <!--头部导航条-->
-<div class="miniHeader">
+<div id="header">
+<div class="miniHeader"id="miniHeader">
     <div class="headerNav">
         <a href="javascript:;">小米网</a>
         <span class="sep">|</span>
@@ -29,16 +32,16 @@
         <a href="javascript:;">Select&nbsp;Region</a>
     </div>
     <div class="headerInfo">
-        <a href="javascript:;">登录</a>
+        <a href="rigister.html">登录</a>
         <span class="sep">|</span>
         <a href="javascript:;">注册</a>
     </div>
     <div class="miniCart" id="miniCart">
         <a href="javascript:;" id="cartBtn" class="cartBtn">
-            <i class="iconfont">&#xe698</i>&nbsp;购物车<span>(0)</span>
+            <i  class="iconfont">&#xe698</i>&nbsp;购物车<span>(0)</span>
         </a>
         <div class="cart-menu" id="cartMenu">
-            <div class="loading">
+            <div class="loading" >
                 购物车中还没有商品，赶紧选购吧！
             </div>
         </div>
@@ -464,15 +467,16 @@
         </form>
     </div>
 </div>
+</div>
 <!--轮播图部分-->
 <div class="wheel w1226">
     <div class="wheelOuter" id="wheelOuter">
         <div class="wheelInner" id="wheelInner">
-            <div><img src="images/whlee-1.jpg" alt=""></div>
-            <div><img src="images/wheel-2.jpg" alt=""></div>
-            <div><img src="images/wheel-3.jpg" alt=""></div>
-            <div><img src="images/wheel-4.jpg" alt=""></div>
-            <div><img src="images/wheel-5.jpg" alt=""></div>
+            <div><img src="" trueImg="images/whlee-1.jpg"></div>
+            <div><img src="" trueImg="images/wheel-2.jpg"></div>
+            <div><img src="" trueImg="images/wheel-3.jpg"></div>
+            <div><img src="" trueImg="images/wheel-4.jpg"></div>
+            <div><img src="" trueImg="images/wheel-5.jpg"></div>
         </div>
         <ul class="indexPoint" id="indexPoint">
             <li class="selected"></li>
@@ -1624,6 +1628,7 @@
     </li>
    </ul>
 </div>
+
 <!--活动部分-->
 <div class="activeList clearfix w1226">
     <div class="activeList-1 w1226">
@@ -1802,7 +1807,7 @@
                 </div>
             </div>
             <div class="box-bd" >
-                <div class="row">
+                <div class="row" id="J_match">
                     <div class="span-first">
                         <ul class="brick-promo-list clearfix">
                          <li class="brick-item-m">
@@ -2667,7 +2672,7 @@
             <div class="box-hd">
                 <h2 class="title">配件</h2>
                 <div class="moreList">
-                    <ul class="tab-list clearfix">
+                    <ul class="tab-list clearfix" id="J_accessories_list">
                         <li class="tab-active">热门</li>
                         <li class="tab-active">保护盖</li>
                         <li class="tab-active">后盖</li>
@@ -2677,7 +2682,7 @@
                 </div>
             </div>
             <div class="box-bd">
-                <div class="row" id="J_row">
+                <div class="row" id="J_accessories">
                     <div class="span-first">
                         <ul class="brick-promo-list clearfix">
                             <li class="brick-item-m">
@@ -2690,226 +2695,15 @@
                             </li>
                         </ul>
                     </div>
-                    <!--<div class="span16">
-                        <div class="tab-container">
-                            <ul class="tab-content clearfix">
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/match3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m brick-item-s">
-                                    <div class=" figure">
-                                        <a href="javascript:;">
-                                            <img src="images/peijian.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title-s">
-                                        小米蓝牙音响
-                                    </h3>
-                                    <p class="price-s">
-                                       <span class="num">
-                                        199
-                                     </span>元
-                                    </p>
-                                </li>
-                                <li class="  brick-item-m brick-item-s brick-item-l">
-                                    <div class="figure figure-more">
-                                        <a href="javascript:;"><i class="iconfont">&#xe62e</i>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="more">浏览更多<small>热门</small>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
         <!--周边部分-->
-        <!--<div class="around">
+        <div class="around">
             <div class="box-hd">
                 <h2 class="title">周边</h2>
                 <div class="moreList">
-                    <ul class="tab-list clearfix">
+                    <ul class="tab-list clearfix" id="J_around_list">
                         <li class="tab-active">热门</li>
                         <li class="tab-active">服装</li>
                         <li class="tab-active">米兔</li>
@@ -2919,7 +2713,7 @@
                 </div>
             </div>
             <div class="box-bd">
-                <div class="row">
+                <div class="row" id="J_around">
                     <div class="span-first">
                         <ul class="brick-promo-list clearfix">
                             <li class="brick-item-m">
@@ -2932,220 +2726,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="span16">
-                        <div class="tab-container">
-                            <ul class="tab-content clearfix">
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m">
-                                    <div class="figure-img">
-                                        <a href="javascript:;">
-                                            <img src="images/round3jpg.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title">
-                                        小米移动电源10000mAh
-                                    </h3>
-                                    <p class="price">
-                                       <span class="num">
-                                        79
-                                     </span>元
-                                    </p>
-                                    <p class="rank">
-                                        17.1万人评价
-                                    </p>
-                                    <div class="reviver-wrapper">
-                                        <a href="javascript:;">
-                                           <span class="reviver">比我以前买的小米转头存点保好用多了，放在包里不占位置...
-                                           </span>
-                                           <span class="autor">来自于  某某  的评
-                                           </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="brick-item-m brick-item-s">
-                                    <div class=" figure">
-                                        <a href="javascript:;">
-                                            <img src="images/zhoubian.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <h3 class="title-s">
-                                        小米蓝牙音响
-                                    </h3>
-                                    <p class="price-s">
-                                       <span class="num">
-                                        199
-                                     </span>元
-                                    </p>
-                                </li>
-                                <li class="  brick-item-m brick-item-s brick-item-l">
-                                    <div class="figure figure-more">
-                                        <a href="javascript:;"><i class="iconfont">&#xe62e</i>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="more">浏览更多<small>热门</small>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>-->
+        </div>
         <!--为你推介-->
         <div class="recommend">
             <div class="box-hd">
@@ -3162,8 +2745,7 @@
                     <div class="xm-recommend">
                         <div class="xm-wrapper">
                             <ul class="xm-carousel" id="xm-carousel">
-                                <li class="recommend-list">
-
+                                <li class="recommend-list move">
                                     <dl>
                                         <dt>
                                             <a href="javascript:;"><img src="images/1-rec.jpg" alt=""></a>
@@ -3173,7 +2755,7 @@
                                         <dd class="recommend-tips">3.5万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3184,7 +2766,7 @@
                                         <dd class="recommend-tips">11.1万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3195,7 +2777,7 @@
                                         <dd class="recommend-tips">753人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3206,7 +2788,7 @@
                                         <dd class="recommend-tips">5413万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3217,7 +2799,7 @@
                                         <dd class="recommend-tips">2889万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3228,7 +2810,7 @@
                                         <dd class="recommend-tips">1.5万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3239,7 +2821,7 @@
                                         <dd class="recommend-tips">6.7万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3250,7 +2832,7 @@
                                         <dd class="recommend-tips">12.5万人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3261,7 +2843,7 @@
                                         <dd class="recommend-tips">5682人好评</dd>
                                     </dl>
                                 </li>
-                                <li class="recommend-list">
+                                <li class="recommend-list move">
 
                                     <dl>
                                         <dt>
@@ -3285,7 +2867,7 @@
             </div>
             <div class="box-bd J_brickBd">
                 <ul class="review-list clearfix">
-                    <li class="review-item review-item-first">
+                    <li class="review-item review-item-first move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/1-rev.jpg" alt="">
@@ -3309,7 +2891,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="review-item">
+                    <li class="review-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/2-rev.jpg" alt="">
@@ -3333,7 +2915,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="review-item">
+                    <li class="review-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/3-rev.jpg" alt="">
@@ -3357,7 +2939,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="review-item">
+                    <li class="review-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/4-rev.jpg" alt="">
@@ -3391,7 +2973,7 @@
             </div>
             <div class="box-bd J_brickBd">
                 <ul class="content-list clearfix">
-                    <li class="content-item content-item-book content-item-first">
+                    <li class="content-item content-item-book content-item-first move">
                         <h2 class="title">图书</h2>
                         <div class="xm-carousel-wrapper">
                             <ul class="item-list J_item-list">
@@ -3465,7 +3047,7 @@
                             <a href="javascript:;" class="control control-pre J_control-pre iconfont">&#xe614</a><a href="javascript:;" class="control control-next J_control-next iconfont">&#xe622</a>
                         </div>
                     </li>
-                    <li class="content-item content-item-theme">
+                    <li class="content-item content-item-theme move">
                         <h2 class="title">MIUI主题</h2>
                         <div class="xm-carousel-wrapper">
                             <ul class="item-list J_item-list">
@@ -3539,7 +3121,7 @@
                             <a href="javascript:;" class="control control-pre J_control-pre iconfont">&#xe614</a><a href="javascript:;" class="control control-next J_control-next iconfont">&#xe622</a>
                         </div>
                     </li>
-                    <li class="content-item content-item-game">
+                    <li class="content-item content-item-game move">
                         <h2 class="title">游戏</h2>
                         <div class="xm-carousel-wrapper">
                             <ul class="item-list J_item-list">
@@ -3613,7 +3195,7 @@
                             <a href="javascript:;" class="control control-pre J_control-pre iconfont">&#xe614</a><a href="javascript:;" class="control control-next J_control-next iconfont">&#xe622</a>
                         </div>
                     </li>
-                    <li class="content-item content-item-app">
+                    <li class="content-item content-item-app move">
                         <h2 class="title">应用</h2>
                         <div class="xm-carousel-wrapper">
                             <ul class="item-list J_item-list">
@@ -3700,7 +3282,7 @@
             </div>
             <div class="box-bd J_brickBd">
                 <ul class="video-list clearfix">
-                    <li class="video-item video-item-first">
+                    <li class="video-item video-item-first move">
                     <div class="fig">
                         <a href="javascript:;">
                             <img src="images/1-vid.jpg" alt="">
@@ -3718,7 +3300,7 @@
                         6.44" 大屏黄金尺寸，看什么都震撼
                     </p>
                     </li>
-                    <li class="video-item">
+                    <li class="video-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/2-vid.jpg" alt="">
@@ -3736,7 +3318,7 @@
                             小米Max沈腾爆笑预告全集
                         </p>
                     </li>
-                    <li class="video-item">
+                    <li class="video-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/3-vid.jpg" alt="">
@@ -3754,7 +3336,7 @@
                             华少用超快语速告诉你小米5 到底有多快
                         </p>
                     </li>
-                    <li class="video-item">
+                    <li class="video-item move">
                         <div class="fig">
                             <a href="javascript:;">
                                 <img src="images/4-vid.jpg" alt="">
