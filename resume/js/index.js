@@ -4,18 +4,19 @@
 }(320);
 /*划屏区域初始化*/
 
+/*
 ~function () {
     var step=0,divList=null;
     var swp=new Swiper(".swiper-container",{
        loop:true,
         direction:'vertical',
-        /*effect : 'cube',
+        /!*effect : 'cube',
         cube: {
             slideShadows: true,
             shadow: true,
             shadowOffset: 100,
             shadowScale: 0.6
-        },*/
+        },*!/
         onSlidePrevEnd:function () {
             step--;
             change();
@@ -39,6 +40,27 @@
     }
 
 }();
+*/
+var mySwiper = new Swiper('.swiper-container', {
+    direction: "vertical",
+    loop: true,
+    speed:500,
+    pagination : '.swiper-pagination',
+    paginationType:'progress',
+    onInit: function (swiper) {
+        swiper.myactive = 1;
+    },
+    onTransitionEnd: function (swiper) {
+        swiper.myactive = swiper.activeIndex;
+        var myId = swiper.slides[swiper.myactive].getAttribute("trueId");
+        console.log(swiper.myactive);
+        for (var i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].id = i == swiper.myactive ? myId : null;
+        }
+    }
+});
+
+
 
 /*音频的自动播放*/
 ~function () {
