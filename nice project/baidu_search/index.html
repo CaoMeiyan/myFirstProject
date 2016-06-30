@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        .search-box {
+            background: #ccc;
+            border: 1px solid black;
+            width: 161px;
+            position: absolute;
+            left: 40px;
+        }
+
+        .search-box ul {
+            list-style: none;
+        }
+
+        .search-box ul li:hover {
+            cursor: pointer;
+            background: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <label>搜索 <input type="search" id="search"></label>
+        <input type="button" value="百度一下" id="searchBtn">
+        <div class="search-box">
+            <ul id="search-list"></ul>
+        </div>
+    </div>
+    <script charset="utf-8" type="text/javascript" src="jsonp.js"></script>
+    <script charset="utf-8" type="text/javascript" src="index.js"></script>
+</body>
+</html>

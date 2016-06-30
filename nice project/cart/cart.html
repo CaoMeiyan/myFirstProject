@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="angular-csp.css">
+</head>
+<body ng-cloak>
+<div ng-controller="ctrl">
+    <table class="table-bordered table">
+        <tr>
+            <td>全选 <input type="checkbox" ng-model="checks" ng-click="selectAll()"></td>
+            <td>商品名字</td>
+            <td>商品价格</td>
+            <td>商品数量</td>
+            <td>小计</td>
+            <td>操作</td>
+        </tr>
+        <tr ng-repeat="product in products">
+            <td><input type="checkbox" ng-model="product.selected" ng-click="select()"></td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>
+                <button ng-click="product.count=product.count-1" ng-disabled="!product.count">-</button>
+                <input type="text" ng-model="product.count">
+                <button ng-click="product.count=product.count+1">+</button>
+            </td>
+            <td>{{product.price*product.count}}</td>
+            <td><button class="btn-danger btn" ng-click="deleteSingle(product)">删除</button></td>
+        </tr>
+        <tr>
+            <td colspan="6" ng-show="products.length">
+                <button class="btn btn-danger" ng-click="deleteAll()">删除选中商品</button>
+                总价：{{total()}} 共{{count()}}商品 共{{countAll()}}件
+                <select ng-model="dis" ng-options="a.value as a.name for a in arr">
+                </select>
+                折后价 {{dis*total()}}
+            </td>
+        </tr>
+    </table>
+</div>
+<script charset="utf-8" type="text/javascript" src="angular.js"></script>
+<script charset="utf-8" type="text/javascript" src="index.js"></script>
+</body>
+</html>
