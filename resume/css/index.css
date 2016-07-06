@@ -408,7 +408,7 @@ html, body {
     position: absolute;
     left: 1.58rem;
     height:3.4rem;
-    top: 1.7rem;
+    top: 1.2rem;
     background: transparent;
 }
 .mid{
@@ -448,7 +448,7 @@ html, body {
 }
 .pageFor ul{
     position: absolute;
-    bottom: .5rem; ;
+    top: 4.7rem;
     width: 1.3rem;
     color: #FFFFFF;
     font-size: .14rem;
