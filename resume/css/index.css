@@ -309,7 +309,7 @@ html, body {
     right: .35rem;
     width: .8rem;
     height: 1.17rem;
-    background: url("../img/cao.jpg")no-repeat;
+    background: url("../img/cmy1.jpg")no-repeat;
     background-size: 100% 100%;
     box-shadow:  -.05rem .05rem .1rem .05rem #c4c1a2;
 }
@@ -394,7 +394,7 @@ html, body {
 /*第四页样式*/
 .experience{
     margin: .3rem auto;
-    width: 2.5rem;
+    width: 2rem;
     text-align: center;
     height: .5rem;
     line-height: .5rem;
