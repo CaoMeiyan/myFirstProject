@@ -227,18 +227,18 @@ html, body {
     color: #FFFFFF;
     opacity: 0;
 }
-.title p{
+.title p {
     position: absolute;
     left: .82rem;
-    bottom: 1.9rem;
+    top: 3.6rem;
     font-size: .18rem;
-    color:rgba(255,255,255,.8);
+    color: rgba(255,255,255,.8);
     opacity: 0;
 }
 .know_more{
     position: absolute;
     left: .65rem;
-    bottom: 1.2rem;
+    top: 4rem;
     width: 1.9rem;
     height: .34rem;
     background: url("../img/known-more.png") no-repeat;
@@ -330,7 +330,7 @@ html, body {
 .pageThr ul{
     position: absolute;
     left: .2rem;
-    top: 1rem;
+    top: 1.4rem;
     //border: 1px solid black;
 
 }
@@ -404,18 +404,27 @@ html, body {
     border: .02rem dashed lightseagreen;
     opacity: 0;
 }
-.mid{
+.midPar{
     position: absolute;
     left: 1.58rem;
-    bottom: .5rem;
+    height:3.4rem;
+    top: 1.7rem;
+    background: transparent;
+}
+.mid{
+    position: absolute;
+    left: 0rem;
+    //height: 3.4rem;
+    bottom:0rem;
     width: .05rem;
     height: 0;
     background: lightseagreen;
     border-radius: .05rem;
+
 }
 .mid>div{
     position: absolute;
-    left:0 ;
+    left:-.025rem;
     width: .1rem;
     height: .1rem;
     border-radius: 50%;
@@ -430,11 +439,11 @@ html, body {
     opacity: 0;
 }
 .thr{
-    bottom: 2.3rem;
+    bottom: 2.1rem;
     opacity: 0;
 }
 .for{
-    bottom: 3.2rem;
+    bottom: 3rem;
     opacity: 0;
 }
 .pageFor ul{
