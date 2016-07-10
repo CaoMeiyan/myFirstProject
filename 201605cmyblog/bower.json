@@ -1,0 +1,20 @@
+{
+  "name": "201605cmyblog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "CaiMeiyan <1099168914@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
