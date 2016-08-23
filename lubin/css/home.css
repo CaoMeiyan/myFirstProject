@@ -1,0 +1,348 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    background: #eee;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    -webkit-user-select: none;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    font-size: 12px;
+    color: #424242;
+}
+
+header, footer, nav, section, aside, figure, figcaption, article, audio, video {
+    display: block;
+}
+
+input {
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover, a:active, a:visited, a:target {
+    text-decoration: none;
+    color: #424242;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+.clear:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+#navBg{
+    width: 100%;
+    background: url("../img/top-bg.jpg") repeat ;
+}
+#bgImg{
+    height: 75px;
+    margin-top: 20px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+@media (max-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    #bgImg{
+        display: none;
+        margin-top:-80px ;
+    }
+    .navchanpin{
+          display:none;
+      }
+    .navbar-wrapper > .container {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 768px){
+
+    .carousel {
+        height: 200px;
+        margin-bottom: 60px;
+    }
+    .carousel .item {
+        height: 200px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 200px;
+    }
+    #bottom #footout  .fotlogo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-40px);
+        display: block;
+        width: 200px;
+
+    }
+
+    #bottom #footout .pend{
+        position: absolute;
+        top:130px;
+        font-style: normal;
+        font-size: 12px;
+        color: #7e7e7f;
+        left: 50%;
+        transform: translate(-150px);
+    }
+    .navbar-wrapper > .container {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 16px;
+    }
+    footer{
+        display: none;
+    }
+}
+/*------------------------------------*/
+.nav1{
+    opacity: 0.5;
+}
+.delopacity{
+    opacity: 1;
+    font-size: 16px;
+}
+.detail{
+    height: 300px;
+    border: 1px solid #ddd;
+}
+#gongsijianjie{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
+#chanpintuijia{
+    height: 150px;
+}
+#banner{
+    background: url("../img/honst.jpg")  left top;
+    width: 100%;
+    height: 200px;
+}
+#inner{
+    width: 8000px;
+    height: 100%;
+}
+#inner>img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #eee;
+    margin: 0px 2px;
+}
+
+
+/*------------------------------------*/
+/* #bottom{
+     margin: 20px 0 0 -20px;
+    border-top: 4px solid #000 ;
+    width: 100%;
+    position: relative;
+    background: #f7f7f7;
+}
+ #bottom #footout{
+    width: 100%;
+    height: 146px;
+}
+
+ #bottom #footout  .fotlogo{
+     position: absolute;
+     left: 50%;
+     transform: translate(-75px);
+     display: block;
+     width: 200px;
+
+}
+
+ #bottom #footout  .fotlogo p{
+    display: block;
+    height: 18px;
+    font-style: normal;
+}
+
+#bottom #footout .pend{
+    position: absolute;
+    top:110px;
+    font-style: normal;
+    font-size: 12px;
+    color: #7e7e7f;
+    left: 50%;
+    transform: translate(-80px);
+}*/
+.fontStyle{
+    margin: 5px 0;
+    text-indent: 2em;
+    font-size: 14px;
+}
+.imggit{
+    width: 600px;
+    height: 380px;
+    display: block;
+}
+
+
+
+
+

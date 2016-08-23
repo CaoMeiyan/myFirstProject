@@ -1,0 +1,105 @@
+#news{
+    width: 100%;
+
+}
+#news .newsL{
+
+    width: 250px;
+    height: 420px;
+    float: left;
+    margin-right: 20px;
+}
+#news .newsL .onlinesaleDiv{
+    width: 250px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background: #dddddd;
+}
+#news .newsL .newsLUl{
+    width: 100%;
+    padding: 15px 0;
+}
+#news .newsL .newsLUl li{
+    font-weight: 500;
+    font-size: 14px;
+    padding:0 15px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+
+}
+#news .newsL .newsLUl li span{
+    float: right;
+    margin-top: 10px;
+}
+#news .newsL .newsLUl{
+    background: url("../img/p-linxibg.jpg");
+}
+#news .newsL .newsLUl li:hover{
+    background: #ddd;
+    border-top: 2px solid #000000;
+
+}
+#news .newsL .newscontent p{
+    margin-top: 20px;
+    padding:0 15px;
+}
+#news .newsL .newscontent .hasbg{
+    width: 100%;
+    height: 100px;
+    background: url("../img/p-linxibg.jpg") no-repeat 100% 100%;
+}
+#news .newsR{
+    float: left;
+    width: 800px;
+    padding:0  15px;
+}
+#news .newsR li{
+    border-bottom: 1px dashed #bbb;
+}
+#news .newsR .newsRImgsale{
+    width: 300px;
+    height: 200px;
+}
+#news .newsR  .newsRDIvsale{
+    float: left;
+    margin-left: 30px ;
+}
+#news .newsR .newsRP{
+    color:#000;
+    font-size: 20px;
+    margin-left: 100px;
+
+}
+#news .newsR .newsRP span{
+    font-size: 15px;
+    color: blue;
+    font-weight:500;
+    margin-left: 30px;
+}
+#news .newsR .newsRP span b{
+    color: red;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+#news .newsR  .onlinesalesR{
+    margin-top: -300px;
+    background: #4cae4c;
+    width: 250px;
+    height: 500px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
